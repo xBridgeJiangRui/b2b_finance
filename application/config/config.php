@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // echo phpinfo();die;
  $domain = $_SERVER['SERVER_NAME'];
   $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
- $config['base_url'] = $protocol.$domain.'/b2b_xbridge';
+ $config['base_url'] = $protocol.$domain.'/b2b_finance';
  //$config['base_url'] = "http://".$domain.'/github/panda_b2b';
 /*$config['base_url'] = '';*/
 

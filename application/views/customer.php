@@ -94,9 +94,9 @@
             ?>
 
             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 img_wrap">
-              <img src="<?php echo $row->logo; ?>" alt="<?php echo $row->acc_name; ?>" class="imagess img-square" style="width:100%">
+              <img src="<?php echo $row->logo; ?>" alt="<?php echo $row->customer_name; ?>" class="imagess img-square" style="width:100%">
               <div class="middle">
-                <button class="buttonn img-circle" name="choose_retailer" id="choose_retailer" type="button" acc_guid="<?php echo $row->acc_guid ?>" seq="<?php echo $i ?>" m_l="<?php echo $row->maintenance ?>" m_d="<?php echo $row->maintenance_date ?>" ><?php echo $row->acc_name; ?></button>
+                <button class="buttonn img-circle" name="choose_retailer" id="choose_retailer" type="button" customer_guid="<?php echo $row->customer_guid ?>" seq="<?php echo $i ?>" m_l="<?php echo $row->maintenance ?>" m_d="<?php echo $row->maintenance_date ?>" ><?php echo $row->customer_name; ?></button>
               </div>
             </div>
             
@@ -120,13 +120,13 @@
 <script>
 $(document).ready(function() {
   $(document).on('click', '#choose_retailer', function() {
-    var acc_guid = $(this).attr('acc_guid');
+    var customer_guid = $(this).attr('customer_guid');
     var seq = $(this).attr('seq');
     var maintenance = $(this).attr('m_l');
     var maintenance_date = $(this).attr('m_d');
     var redirect_location = '';
 
-    if ((acc_guid == '') || (acc_guid == 'null') || (acc_guid == null)) {
+    if ((customer_guid == '') || (customer_guid == 'null') || (customer_guid == null)) {
       alert('Error to Get Customer.Please Contact Support.');
       return;
     }
@@ -135,7 +135,7 @@ $(document).ready(function() {
       url: "<?php echo site_url('Login_c/customer_setsession') ?>",
       method: "POST",
       data: {
-        customer: acc_guid,
+        customer: customer_guid,
       },
       beforeSend: function() {
         $('.btn').button('loading');

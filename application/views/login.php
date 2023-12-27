@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Rexbridge B2B</title>
+  <title>B2B | Finance</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo base_url("assets/bootstrap/css/bootstrap.min.css"); ?>">
@@ -115,7 +115,7 @@ height:230px;
 <div class="right" id="right">
 <br>
     <div class="jumbotron">
-                <form class="form-horizontal" role="form" action="<?php echo site_url('login_c/check')?>" method="post">
+                <form class="form-horizontal" role="form" action="<?php echo site_url('login_c/validate_check')?>" method="post">
                 <div class="form-group">
                 <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>

@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session', 'panda', 'form_validation','message','File_config_b2b');
+$autoload['libraries'] = array('database', 'session', 'xBridge', 'form_validation','message','File_config_b2b');
 
 /*
 | -------------------------------------------------------------------

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>B2B | Training </title>
+  <title>B2B | Finance </title>
   <link rel="icon" type="image/png" href="<?php echo base_url('asset/dist/img/rexbridge.JPG');?>">
 
   <!-- Google Font: Source Sans Pro -->
@@ -307,7 +307,7 @@
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <?php if (isset($_SESSION['show_side_menu']) == '1') 
+          <?php if (isset($_SESSION['show_side_menu']) == 'TRUE') 
           { 
             ?>
             <a href="<?php echo site_url('Dashboard');?>" class="nav-link">Home</a>
@@ -323,7 +323,7 @@
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- Notifications Dropdown Menu -->
-        <?php if (isset($_SESSION['show_side_menu']) == '1') 
+        <?php if (isset($_SESSION['show_side_menu']) == 'TRUE') 
         { 
           ?>
           <li class="nav-item dropdown">
@@ -418,7 +418,7 @@
     <!-- /.navbar -->
     
     <!-- Check Have Select Retailers Or Not -->
-    <?php if (isset($_SESSION['show_side_menu']) == '1') 
+    <?php if (isset($_SESSION['show_side_menu']) == 'TRUE') 
     { 
       ?>
       <!-- Main Sidebar Container -->
